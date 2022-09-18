@@ -10,13 +10,13 @@ export class EvidenciasService {
     {
       id:'1',
       title:'Evidencia 1',
-      imageURL:'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cerezos-en-flor-02-jpg-ok-1529047316.jpg',
+      imageURL:'/assets/evidencia1.svg',
       comments: ['muy cheveres','muy buenas']
     },
     {
       id:'2',
       title:'Evidencia 2',
-      imageURL:'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cerezos-en-flor-02-jpg-ok-1529047316.jpg',
+      imageURL:'/assets/evidencia2.svg',
       comments: ['muy cheveres','muy buenas']
     }
 
