@@ -8,9 +8,23 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'informacion',
     pathMatch: 'full'
   },
+  {
+    path: 'informacion',
+    children: [{
+      path: "",
+      loadChildren: () => import('./informacion/informacion.module').then( m => m.InformacionPageModule)
+    },
+    {
+      path:':informacionid',
+      loadChildren: ()=> import('./informacion/evidencia1/evidencia1.module').then( m => m.Evidencia1PageModule)
+    }
+  
+  ]
+  }
+ 
 ];
 
 @NgModule({
