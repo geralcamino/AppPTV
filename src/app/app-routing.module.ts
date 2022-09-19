@@ -23,6 +23,10 @@ const routes: Routes = [
     }
   
   ]
+  },
+  {
+    path: 'programas',
+    loadChildren: () => import('./programas/programas.module').then( m => m.ProgramasPageModule)
   }
  
 ];
