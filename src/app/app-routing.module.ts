@@ -27,6 +27,14 @@ const routes: Routes = [
   {
     path: 'programas',
     loadChildren: () => import('./programas/programas.module').then( m => m.ProgramasPageModule)
+  },
+  {
+    path: 'acerca',
+    loadChildren: () => import('./acerca/acerca.module').then( m => m.AcercaPageModule)
+  },
+  {
+    path: 'slides',
+    loadChildren: () => import('./slides/slides.module').then( m => m.SlidesPageModule)
   }
  
 ];
