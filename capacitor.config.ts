@@ -14,6 +14,7 @@ const config: CapacitorConfig = {
       SplashShowOnlyFirstTime: 'false',
       SplashScreen: 'screen',
       SplashScreenDelay: '3000'
+      
     }
   }
 };
