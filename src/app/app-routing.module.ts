@@ -39,7 +39,11 @@ const routes: Routes = [
   {
     path: 'galeria',
     loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
+  },  {
+    path: 'acontec',
+    loadChildren: () => import('./acontec/acontec.module').then( m => m.AcontecPageModule)
   }
+
  
 ];
 

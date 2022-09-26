@@ -13,7 +13,7 @@
     ACIU-TV 
   </ion-button>
 
-  <ion-button id="open-modal2" expand="block" color="tertiary"> 
+  <ion-button Href="/acontec" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     ACONTEC-TV
   </ion-button>
@@ -22,6 +22,7 @@
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     AEMPRE-TV
   </ion-button>
+
   <ion-button id="open-modal4" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     ASQUEAPAC
@@ -61,35 +62,37 @@
     </ng-template>
   </ion-modal>
 
-   
+  <div class="modal3">
+    <ion-modal #modal trigger="open-modal3" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>ACIU-TV</ion-title>
+            <ion-buttons slot="end">
+            <ion-button color="tertiary" (click)="modal.cancel()">Cerrar</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          
+          <ion-card class="welcome-card">
+            <img src="/assets/aciu.svg" alt="" />
+            <ion-card-header>
+            <ion-card-title> Aprendices ciudadanos transformando vida</ion-card-title>
+            </ion-card-header>
+            <ion-card-content >
+              <p>Construimos país con responsabilidad social</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+
+  </div>
 </ion-content>
 
-<ion-content>
-  <ion-modal #modal trigger="open-modal2" [swipeToClose]="false" [canDismiss]="canDismiss">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar color="primary">
-          <ion-title>ACONTEC-TV</ion-title>
-          <ion-buttons slot="end">
-            <ion-button color="tertiary" (click)="modal.dismiss()">Cerrar</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content>
-        
-        <ion-card class="welcome-card">
-          <img src="/assets/acontec.svg" alt="" />
-          <ion-card-header>
-          <ion-card-title> Aprendices conversando con la tecnología</ion-card-title>
-          </ion-card-header>
-          <ion-card-content >
-            <p>Conversando con la tecnología evidenciamos calidad de vida</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
 
-</ion-content>
+      
 
 
