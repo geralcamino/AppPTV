@@ -42,7 +42,7 @@
         <ion-toolbar color="primary">
           <ion-title>ACIU-TV</ion-title>
           <ion-buttons slot="end">
-            <ion-button color="tertiary" (click)="modal.dismiss()">Close</ion-button>
+            <ion-button color="tertiary" (click)="modal.dismiss()">Cerrar</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -61,13 +61,17 @@
     </ng-template>
   </ion-modal>
 
-  <ion-modal #modal trigger="open-modal2" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+   
+</ion-content>
+
+<ion-content>
+  <ion-modal #modal trigger="open-modal2" [swipeToClose]="false" [canDismiss]="canDismiss">
     <ng-template>
       <ion-header>
         <ion-toolbar color="primary">
           <ion-title>ACONTEC-TV</ion-title>
           <ion-buttons slot="end">
-            <ion-button color="tertiary" (click)="modal.dismiss()">Close</ion-button>
+            <ion-button color="tertiary" (click)="modal.dismiss()">Cerrar</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -86,15 +90,6 @@
     </ng-template>
   </ion-modal>
 
-
-
-
-
-
-
-  
 </ion-content>
-
-
 
 
