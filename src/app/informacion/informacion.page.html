@@ -16,5 +16,48 @@
       {{informacion.title}}
     </ion-item>
   </ion-list>
+  <h1></h1>
 
+  <div class="boton">
+   <ion-button id="open-modal" round  color="warning">
+    <ion-icon  name="add"></ion-icon>
+   </ion-button>
+  </div>
+
+  
+
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+   
+      <ion-header>
+        <ion-toolbar color="primary">
+          
+          <ion-title>Evidencias</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="tertiary" (click)="modal.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+        <ion-content>
+        <ion-card class="correo">
+          <ion-item>
+            <ion-icon name="mail" slot="start" color="danger"></ion-icon>
+            <ion-label>Gmail</ion-label>
+            <ion-button fill="outline" slot="end" color="tertiary">Ir...</ion-button>
+          </ion-item>
+        
+          <ion-card-content>
+            ¡Hola aprendiz! Un calido saludo, es hora de enviar tus evidencias para ello
+            te recomendamos hacer uso del correo institucional que el SENA nos proporciona.
+          </ion-card-content>
+          <ion-card-content>
+            Haz click en ir para entrar directamente al drive.
+          </ion-card-content>
+        </ion-card>
+            
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
+
+
