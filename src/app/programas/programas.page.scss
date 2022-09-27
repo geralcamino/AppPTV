@@ -2,16 +2,40 @@
 .welcome-card ion-img {
     max-height: 20vh;
     overflow: hidden;
+    font-family: Source Sans Pro;
   }
   
   ion-card-content
   {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: black;
+  font-family: Source Sans Pro;
   }
   
 
   .open-modal ion-button{
     color: black;
+   // font-family: Source Sans Pro;
 
+  }
+
+  .open-modal
+  {
+    //font-family: Source Sans Pro;
+  }
+
+  .modal3{
+    font-family: Source Sans Pro;
+  }
+
+  .imagen{
+    text-align: center;
+  }
+
+  .tran{
+    text-align: center;
+  }
+
+  .titulomustv{
+    text-align: center;
   }

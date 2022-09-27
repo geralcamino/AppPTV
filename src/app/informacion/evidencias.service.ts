@@ -9,16 +9,27 @@ export class EvidenciasService {
   private informacion: evidencias[]=[
     {
       id:'1',
-      title:'Evidencia 1',
-      imageURL:'/assets/evidencia1.svg',
+      title:'Fase 1',
+      imageURL:'/assets/faseuno.png',
+      imageIcon:'/assets/evidencia1.svg',
       comments: ['muy cheveres','muy buenas']
     },
     {
       id:'2',
-      title:'Evidencia 2',
-      imageURL:'/assets/evidencia2.svg',
+      title:'Fase 2',
+      imageIcon:'/assets/evidencia2.svg',
+      imageURL:'/assets/fasedos.png',
+      comments: ['Nivel 1','Nivel 2', 'Nivel 3']
+    },
+    {
+      id:'3',
+      title:'Fase 3',
+      imageIcon:'/assets/evidencia3.svg',
+      imageURL:'/assets/fasetres.png',
       comments: ['muy cheveres','muy buenas']
     }
+    
+
 
    ]
 
@@ -27,11 +38,12 @@ export class EvidenciasService {
   }
 
   getEvidencias(){return [...this.informacion]}
-  AddEvidencias(title: string,imageURL: string)
+  AddEvidencias(title: string,imageURL: string,imageIcon:string)
   {
     this.informacion.push({
       title,
       imageURL,
+      imageIcon,
       comments:[],
       id: this.informacion.length +1 +""
     });

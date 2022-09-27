@@ -13,25 +13,21 @@
     ACIU-TV 
   </ion-button>
 
-  <ion-button Href="/acontec" expand="block" color="tertiary"> 
+  <ion-button  Href="/acontec" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     ACONTEC-TV
   </ion-button>
 
   <ion-button id="open-modal3" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
-    AEMPRE-TV
+    ASQUEPAC
   </ion-button>
 
   <ion-button id="open-modal4" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
-    ASQUEAPAC
-  </ion-button>
-  <ion-button id="open-modal5" expand="block" color="tertiary"> 
-    <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     COTV
   </ion-button>
-  <ion-button id="open-modal6" expand="block" color="tertiary"> 
+  <ion-button id="open-modal5" expand="block" color="tertiary"> 
     <ion-icon slot="start" name="heart-circle-outline"></ion-icon>
     MUSTV
   </ion-button>
@@ -52,12 +48,13 @@
         <ion-card class="welcome-card">
           <img src="/assets/aciu.svg" alt="" />
           <ion-card-header>
-          <ion-card-title> Aprendices ciudadanos transformando vida</ion-card-title>
+          <ion-card-title class="tran"> Aprendices ciudadanos transformando vida</ion-card-title>
           </ion-card-header>
           <ion-card-content >
             <p>Construimos país con responsabilidad social</p>
+            <img class="imagen" src="/assets/evidencias/aciutv.jpeg" alt="" />
           </ion-card-content>
-        </ion-card>
+        </ion-card>      
       </ion-content>
     </ng-template>
   </ion-modal>
@@ -67,7 +64,7 @@
       <ng-template>
         <ion-header>
           <ion-toolbar color="primary">
-            <ion-title>ACIU-TV</ion-title>
+            <ion-title>ASQUEPAC</ion-title>
             <ion-buttons slot="end">
             <ion-button color="tertiary" (click)="modal.cancel()">Cerrar</ion-button>
             </ion-buttons>
@@ -76,20 +73,75 @@
         <ion-content>
           
           <ion-card class="welcome-card">
-            <img src="/assets/aciu.svg" alt="" />
+            <img src="/assets/asquepac.svg" alt="" />
             <ion-card-header>
-            <ion-card-title> Aprendices ciudadanos transformando vida</ion-card-title>
+            <ion-card-title>Aprencides SENA que son padres competentes</ion-card-title>
             </ion-card-header>
             <ion-card-content >
-              <p>Construimos país con responsabilidad social</p>
+              <p>Nuestro principio es la vida y lo asumimos con responsabilidad social</p>
             </ion-card-content>
           </ion-card>
         </ion-content>
       </ng-template>
     </ion-modal>
-
-
   </div>
+
+
+  <div class="modal4">
+    <ion-modal #modal trigger="open-modal4" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>COTV</ion-title>
+            <ion-buttons slot="end">
+            <ion-button color="tertiary" (click)="modal.cancel()">Cerrar</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          
+          <ion-card class="welcome-card">
+            <img src="/assets/cotv.svg" alt="" />
+            <ion-card-header>
+            <ion-card-title> Circulo de oración transformación vida </ion-card-title>
+            </ion-card-header>
+            <ion-card-content >
+              <p>Caminamos en oración evidenciando nuestra transformación </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+  <div class="modal5">
+    <ion-modal #modal trigger="open-modal5" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>MUSTV</ion-title>
+            <ion-buttons slot="end">
+            <ion-button color="tertiary" (click)="modal.cancel()">Cerrar</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          
+          <ion-card class="welcome-card">
+            <img src="/assets/mustv.svg" alt="" />
+            <ion-card-header>
+            <ion-card-title class="titulomustv"> Mujeres SENA transformando vida</ion-card-title>
+            </ion-card-header>
+            <ion-card-content >
+              <p>Caminamos con el hombre, construyendo responsabilidad social</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+
 </ion-content>
 
 
