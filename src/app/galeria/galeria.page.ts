@@ -10,13 +10,9 @@ import { VideoPlayer } from '@awesome-cordova-plugins/video-player/ngx';
 })
 export class GaleriaPage implements OnInit {
 
-  constructor(private videoPlayer: VideoPlayer) {
+  constructor() {
 
-    this.videoPlayer.play('file:///android_asset/www/movie.mp4').then(() => {
- console.log('video completed');
-}).catch(err => {
- console.log(err);
-});
+   
    }
 
 
