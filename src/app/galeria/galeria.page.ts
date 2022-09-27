@@ -3,6 +3,7 @@ import { VideoPlayer } from '@awesome-cordova-plugins/video-player/ngx';
 
 
 
+
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.page.html',
@@ -10,9 +11,13 @@ import { VideoPlayer } from '@awesome-cordova-plugins/video-player/ngx';
 })
 export class GaleriaPage implements OnInit {
 
-  constructor() {
+  constructor(private videoPlayer: VideoPlayer) {
 
-   
+    this.videoPlayer.play('file://www/assets/movie.mp4').then(() => {
+ console.log('video completed');
+}).catch(err => {
+ console.log(err);
+});
    }
 
 

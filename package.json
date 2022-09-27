@@ -52,8 +52,14 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-device": "2.0.2",
     "cordova-plugin-hkvideoplayer": "^1.0.12",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
     "cordova-plugin-video-player": "github:moust/cordova-plugin-videoplayer",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
@@ -77,7 +83,15 @@
       "cordova-plugin-camera": {},
       "com.moust.cordova.videoplayer": {},
       "cordova-plugin-add-swift-support": {},
-      "cordova-plugin-hkvideoplayer": {}
-    }
+      "cordova-plugin-hkvideoplayer": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "browser"
+    ]
   }
 }
