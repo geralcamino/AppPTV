@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoPlayer } from '@awesome-cordova-plugins/video-player/ngx';
-
 
 
 
@@ -11,14 +9,7 @@ import { VideoPlayer } from '@awesome-cordova-plugins/video-player/ngx';
 })
 export class GaleriaPage implements OnInit {
 
-  constructor(private videoPlayer: VideoPlayer) {
 
-    this.videoPlayer.play('file://www/assets/movie.mp4').then(() => {
- console.log('video completed');
-}).catch(err => {
- console.log(err);
-});
-   }
 
 
   
