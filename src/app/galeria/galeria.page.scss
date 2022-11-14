@@ -1,0 +1,109 @@
+
+  ion-title
+  {
+    //font-family: cursive;
+    font-family: Source Sans Pro;
+  }
+
+  .informacion{
+ 
+    margin-top: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
+    //font-family: cursive;
+    font-family: Source Sans Pro;
+    background-color: #DEA1FF ;
+    //border-radius: 30px 30px 30px 30px;
+    color :black;
+    text-align: justify;
+    overflow-x: scroll!important;
+    overflow: hidden;    
+  }
+
+  .ptv{
+    text-align: center;
+  }
+
+  .para{
+    text-align: center;
+  }
+
+  .image{
+    
+    display: block;
+    width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .paraque{
+    text-align: center;
+  }
+
+  ion-item {
+    --padding-start: 0;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .h1 {
+    text-align: center;
+    color: darkgreen;
+  }
+
+  .contenido 
+  {
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    
+  }
+
+  
+
+ 
+  .card-content-md p {
+   
+    text-align: justify;
+    color: #000;
+    font-size: 16px;
+}
+
+.img{
+  text-align: center;
+  
+}
+:host{
+  ion-card-subtitle{ 
+    color: #d34444;
+    font-size: 16px;
+    text-align: center;
+  
+  }
+  
+}
+
+:host{
+  ion-card-title{
+    text-align: center;
+    margin: 2px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  
+  
+  
+  }
+  
+}
+
